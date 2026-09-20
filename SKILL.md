@@ -7,7 +7,7 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 
 ## 目标
 
-把“做了一个方法”写成“提出并验证了一个有明确技术必要性的研究贡献”。
+依据实际证据，说明方法的技术必要性、已验证收益和未解决问题；证据不足时交付研究计划或有边界的阶段结论，不预设一定存在可投稿的新贡献。
 
 核心不是辞藻，而是构建一条可审查的因果链：
 
@@ -55,7 +55,7 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 
 ### 4. Evidence ladder
 
-实验按证据强度而不是按“做实验的时间顺序”组织：
+实验按论证问题组织，而不是按“做实验的时间顺序”组织；下列是互补证据类型，不是适用于所有研究的强弱排序：
 
 1. mechanism / toy / controlled simulation
 2. controlled laboratory ground truth
@@ -119,18 +119,15 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 
 > Existing X fails when Y because Z. We therefore introduce A, which changes/estimates/constrains B so that C remains valid under D.
 
-创新强度从低到高通常为：
+下列是可能的贡献类型，不构成通用的创新强弱排名：
 
 ```text
-模块拼接
-< 参数/工程优化
-< 针对失败模式的机制改造
-< 新的可靠性/诊断量
-< 新的约束/模型/可辨识性处理
-< 重新定义问题并解除核心技术矛盾
+组合机制 / 等价加速 / 失效机制改造 / 可靠性诊断 / 约束模型 / 可辨识性分析
 ```
 
 对“组合创新”，必须解释为什么模块间存在**互补性与依赖关系**，而非仅仅串联。
+
+工程等价加速可以是独立价值，但不是自动获得新的物理可辨识性；更复杂的滤波器、贝叶斯名称或更多模块也不自动意味着更强贡献。不得为了符合叙事而改变算法、选择性保留结果或将经典组件改名为原创。
 
 详细规则见 `references/innovation-method.md`。
 
@@ -151,7 +148,7 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 
 不要一上来就推公式。
 
-### 每个方法小节固定六步
+### 每个方法小节检查六项（按需要合并，不强制六段）
 
 1. **Problem/Fault**：本小节解决上一阶段留下的什么失败模式。
 2. **Rationale**：为什么选这个物理/统计原理。
@@ -250,6 +247,7 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 - 提炼创新、写方法与公式：读 `references/innovation-method.md`
 - 设计实验、写结果/讨论：读 `references/experiments-results.md`
 - 需要模仿高水平视觉测振论文的“论证套路”而非文字：读 `references/corpus-patterns.md`
+- 视频测量、跟踪、滤波、模态/波形或可靠性论文：读 `references/measurement-validation.md`，区分接口等价、测量精度和来源识别。
 - 从零规划全文：复制并填写 `assets/manuscript-blueprint.md`
 - 审查 contribution 是否有证据：使用 `assets/claim-evidence-matrix.md`
 - 投稿前自审：使用 `assets/reviewer-pressure-test.md`
@@ -269,3 +267,4 @@ description: 面向工程、计算机视觉、结构动力学、信号处理与�
 - [ ] 失败案例没有被隐藏。
 - [ ] 结论范围不超过实验范围。
 - [ ] 没有虚构引用、数据、实验或不存在的图。
+
